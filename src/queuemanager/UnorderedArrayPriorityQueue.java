@@ -34,6 +34,7 @@ public class UnorderedArrayPriorityQueue<T> implements PriorityQueue<T> {
         if (isEmpty()) {
             throw new QueueUnderflowException();
         } else {
+            //testing
             for (int i = 0; i<= tailIndex; i++) {
                 if (((PriorityItem<T>) Storage[i]).getPriority() > highestPriority) {
                     highestPriority = ((PriorityItem<T>) Storage[i]).getPriority();
