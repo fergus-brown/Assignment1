@@ -18,9 +18,13 @@ import static org.hamcrest.CoreMatchers.is;
 /**
  *
  * @author fergu
+ * mkyong. (2009) JUnit- Expected Exceptions Test, mkyong, Available from 
+ * https://www.google.com/search?client=firefox-b-d&q=%40test%28expected%29
+ * [30/04/2020]
  */
 public class OrderedLinkedListTest {
     
+    //(mkyong(2009)
     @Rule
     public ExpectedException thrown = ExpectedException.none();
     
@@ -65,6 +69,7 @@ public class OrderedLinkedListTest {
     @Test
     public void testHeadEmpty() throws Exception {
         System.out.println("head");
+        //(mkyong, 2009)
         thrown.expect(QueueUnderflowException.class);
         thrown.expectMessage(is("Queue is empty"));
         OrderedLinkedList instance = new OrderedLinkedList();
@@ -199,6 +204,7 @@ public class OrderedLinkedListTest {
     @Test
     public void testRemoveEmpty() throws Exception {
         System.out.println("remove");
+        //(mkyong, 2009)
         thrown.expect(QueueUnderflowException.class);
         thrown.expectMessage(is("Queue is empty"));
         OrderedLinkedList instance = new OrderedLinkedList();
