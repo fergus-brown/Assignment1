@@ -54,6 +54,7 @@ public class UnorderedArrayPriorityQueue<T> implements PriorityQueue<T> {
     *Searches forwards through the array comparing the priority of the current object to the highest priority so far. 
     *If higher than the stored highestPriority, highestPriority variable is updated and startPosition is set to the position of the current object.
     *For loop moves everything in the storage after the position of the highest priority item down by one until tailIndex is reached
+    *Modified from the add() in SortedArrayPriorityQueue class, as they follow similar logic.
     */
     
         @Override
