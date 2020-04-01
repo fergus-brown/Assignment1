@@ -74,6 +74,7 @@ public class UnorderedLinkedList<T> implements PriorityQueue<T> {
     * If it is inserted elsewhere in the list, both the previous objects next point and the next objects previous pointers
     * are changed to the current object.
     * Head is set to start.
+    * James, J. (2016) Java Linked Lists: Explained, YouTube, 18 December 2016, Available from https://www.youtube.com/watch?v=ch1uQeu0PVY [26/03/2020]
     */
     @Override
     public void remove() throws QueueUnderflowException {
@@ -100,7 +101,11 @@ public class UnorderedLinkedList<T> implements PriorityQueue<T> {
             * If it is inserted elsewhere in the list, both the previous objects next point and the next objects previous pointers
             * are changed to the current object.
             * Head is set to start.
-        */             
+            * Reference:
+            * Vpn_talent (2017), Creating a LinkedList class from scratch, 02 May 2017, stackoverflow, Available from: 
+            * https://stackoverflow.com/questions/4066729/creating-a-linkedlist-class-from-scratch [26/03/2020]
+        */  
+        //(Vpn_talent, 2017)
            if (getSize() == 1) {
                start = null;
            } else if (head.prev == null) {
@@ -118,6 +123,7 @@ public class UnorderedLinkedList<T> implements PriorityQueue<T> {
     /*
     * Sets a node to start then searches through the list to get the number of objects in it.
     */
+    //(James,J 2016)
     private int getSize() {
         ListNode<T> node = start;
         int result = 0;
